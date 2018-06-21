@@ -1,0 +1,9 @@
+@{{name}}
+Feature: {{nameCapital}} Display
+
+  Scenario: Buying {{indefiniteArticle}} {{name}}
+
+    Given we have 50 {{namePlural}}
+    When we sell {{indefiniteArticle}} {{name}}
+    Then we receieve {{price}}
+    And we have 49 {{namePlural}} remaining

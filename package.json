@@ -1,0 +1,31 @@
+{
+    "name": "cucumber-crockpot",
+    "version": "0.1.0",
+    "description": "Create template files for Cucumber",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "build": "./node_modules/.bin/tsc",
+        "postinstall": "npm run build"
+    },
+    "keywords": [
+        "cucumber",
+        "gherkin",
+        "javascript"
+    ],
+    "author": "Rob Porter <rob@weeverapps.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@types/fs-extra": "5.0.3",
+        "@types/mustache": "0.8.31",
+        "fs-extra": "6.0.1",
+        "inquiry-monad": "0.21.2",
+        "mustache": "2.3.0",
+        "ramda": "0.25.0",
+        "typescript": "2.9.2"
+    },
+    "devDependencies": {
+        "jest": "23.1.0",
+        "mock-require": "3.0.2"
+    }
+}

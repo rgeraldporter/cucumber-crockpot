@@ -1,0 +1,30 @@
+[
+    {
+        "name": "apple",
+        "namePlural": "apples",
+        "indefiniteArticle": "an",
+        "nameCapital": "Apple",
+        "price": "$0.76"
+    },
+    {
+        "name": "banana",
+        "namePlural": "bananas",
+        "indefiniteArticle": "a",
+        "nameCapital": "Banana",
+        "price": "$0.16"
+    },
+    {
+        "name": "currant",
+        "namePlural": "currants",
+        "indefiniteArticle": "a",
+        "nameCapital": "Currant",
+        "price": "$0.06"
+    },
+    {
+        "name": "durian",
+        "namePlural": "durians",
+        "indefiniteArticle": "a",
+        "nameCapital": "Durian",
+        "price": "$1.56"
+    }
+]
