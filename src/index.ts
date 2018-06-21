@@ -22,18 +22,18 @@ const templateCrock = (crock: string) => (view: Object) => ({
 // @todo handle crock with views within
 const processComplexBatch = (batch: any) => {};
 
-const pickle = (batch: Object) =>
+const pickle = (batch: any) =>
     Array.isArray(batch.views)
         ? batch.views.map(templateCrock(batch.crock)).map(outputFiles)
         : processComplexBatch(batch);
 
-const loadViews = (args: Object) =>
+const loadViews = (args: any) =>
     fsx
         .readJson(args.view)
         .then(json => Pass({ json }))
         .catch(Fail);
 
-const loadCrock = (args: Object) =>
+const loadCrock = (args:  any) =>
     fsx
         .readFile(args.crock, 'utf-8')
         .then((content: string) => Pass({ content }))
@@ -44,7 +44,7 @@ const parse = (args: Object) =>
         .inquire(loadViews)
         .inquire(loadCrock)
         .fold(
-            (x: PassMonad) => {
+            (x: any) => {
                 // we had something pass
                 // as long as that something is the crock we're good
                 const results = x.join().map((pass: any) => {
@@ -55,7 +55,7 @@ const parse = (args: Object) =>
 
                 pickle(R.mergeAll(results));
             },
-            (y: FailMonad) => {
+            (y: any) => {
                 // nothing passed
                 // throw error log out ther
                 console.error('You must have a crock file and/or a view file.');

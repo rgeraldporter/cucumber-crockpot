@@ -1,11 +1,11 @@
 {
     "name": "cucumber-crockpot",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Create template files for Cucumber",
     "main": "index.js",
     "scripts": {
         "test": "jest",
-        "build": "./node_modules/.bin/tsc",
+        "build": "./node_modules/.bin/tsc -p ./",
         "postinstall": "npm run build"
     },
     "keywords": [
@@ -18,6 +18,7 @@
     "dependencies": {
         "@types/fs-extra": "5.0.3",
         "@types/mustache": "0.8.31",
+        "@types/ramda": "0.25.33",
         "fs-extra": "6.0.1",
         "inquiry-monad": "0.21.2",
         "mustache": "2.3.0",
