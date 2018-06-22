@@ -26,8 +26,7 @@ Feature: Apple Display
     Given we have 50 apples
     When we sell an apple
     Then we receieve $0.76
-    And we have 49 apples remaining
-`);
+    And we have 49 apples remaining`);
                         done();
                     }),
             2000
