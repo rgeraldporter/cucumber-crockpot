@@ -1,6 +1,6 @@
 {
     "name": "cucumber-crockpot",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Create template files for Cucumber",
     "main": "./built/index.js",
     "scripts": {
@@ -13,6 +13,10 @@
         "gherkin",
         "javascript"
     ],
+    "repository": {
+      "url": "git@github.com:rgeraldporter/cucumber-crockpot.git",
+      "type": "git"
+    },
     "author": "Rob Porter <rob@weeverapps.com>",
     "license": "MIT",
     "dependencies": {
