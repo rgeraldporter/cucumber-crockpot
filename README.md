@@ -87,9 +87,9 @@ Feature: Apple Display
 
 ## API
 
-Currently, only two functions are exposed, which you can import:
+Currently, only two functions are exposed:
 
- * `parse`: Takes an object with two properties: `crock` and `view`, each a paths to their respective files.
+ * `parse`: Takes an object with two properties: `crock` and `view`, each are paths to their respective files.
  * `setFeaturePath`: This changes the path for exporting resulting `.feature` files to whatever path you provide. Without using this, the default is the `./features` folder in your project.
 
 ### Example use of API
@@ -125,3 +125,17 @@ Since the crock files are the "source of truth" for your Cucumber tests when usi
 In the pre-1.x phase I'll be looking into the possibility of combining the crock & view files together, but only as an option -- seperate files will always be supported.
 
 I don't currently foresee adding any more complexity to the `.crock` file beyond this, but I am open to suggestions.
+
+## Development
+
+Source is written in TypeScript. Run tests via `npm run test`.
+
+## MIT License
+
+Copyright 2018 Robert Gerald Porter <rob@weeverapps.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
