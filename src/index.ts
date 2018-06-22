@@ -33,13 +33,13 @@ const loadViews = (args: any) =>
         .then(json => Pass({ json }))
         .catch(Fail);
 
-const loadCrock = (args:  any) =>
+const loadCrock = (args: any) =>
     fsx
         .readFile(args.crock, 'utf-8')
         .then((content: string) => Pass({ content }))
         .catch(Fail);
 
-const parse = (args: Object) =>
+const parse = <T>(args: T | any) =>
     InquiryP.subject(args)
         .inquire(loadViews)
         .inquire(loadCrock)
