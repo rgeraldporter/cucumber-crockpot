@@ -71,6 +71,8 @@ with a paired `.view.json` file as such:
 ]
 ```
 
+_NOTE: the `name` property is the lone **required** part of a any given view item, must be unique, and valid for use in a filename._
+
 And this would result in `.feature` files like this:
 
 ```
@@ -89,7 +91,7 @@ Feature: Apple Display
 
 Currently, only two functions are exposed:
 
- * `parse`: Takes an object with two properties: `crock` and `view`, each are paths to their respective files.
+ * `parse`: Takes an object with two properties: `crock` and `view`, each are paths to their respective files. Each view item must have a unique `name` property that will be used to generate `.feature` file names.
  * `setFeaturePath`: This changes the path for exporting resulting `.feature` files to whatever path you provide. Without using this, the default is the `./features` folder in your project.
 
 ### Example use of API

@@ -1,6 +1,6 @@
 {
     "name": "cucumber-crockpot",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Create template files for Cucumber",
     "main": "./built/index.js",
     "scripts": {
