@@ -1,12 +1,12 @@
 {
     "name": "cucumber-crockpot",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Create template files for Cucumber",
     "main": "./built/index.js",
     "scripts": {
         "test": "jest",
         "build": "./node_modules/.bin/tsc -p ./",
-        "postinstall": "npm run build"
+        "prepublishOnly": "npm run build"
     },
     "keywords": [
         "cucumber",
@@ -21,6 +21,7 @@
     "license": "MIT",
     "dependencies": {
         "@types/fs-extra": "5.0.3",
+        "@types/jest": "23.3.7",
         "@types/mustache": "0.8.31",
         "@types/ramda": "0.25.33",
         "fs-extra": "6.0.1",
@@ -32,5 +33,10 @@
     "devDependencies": {
         "jest": "23.1.0",
         "mock-require": "3.0.2"
-    }
+    },
+    "files": [
+        "built/index.d.ts",
+        "built/index.js",
+        "built/index.js.map"
+    ]
 }
