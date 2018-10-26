@@ -1,6 +1,6 @@
 {
     "name": "cucumber-crockpot",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "Create template files for Cucumber",
     "main": "./built/index.js",
     "scripts": {
@@ -24,7 +24,7 @@
         "@types/mustache": "0.8.31",
         "@types/ramda": "0.25.33",
         "fs-extra": "6.0.1",
-        "inquiry-monad": "0.22.3",
+        "inquiry-monad": "0.30.3",
         "mustache": "2.3.0",
         "ramda": "0.25.0",
         "typescript": "2.9.2"
