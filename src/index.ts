@@ -6,12 +6,9 @@ import R from 'ramda';
 let featurePath = './features/';
 
 const outputFiles = (picklejar: any) =>
-    fsx.outputFile(
+    fsx.outputFileSync(
         `${featurePath}crockpot/${picklejar.view.name}.feature`,
-        picklejar.content,
-        (err: any) => {
-            // do stuff when this succeeds, or handle failure
-        }
+        picklejar.content
     );
 
 const templateCrock = (crock: string) => (view: Object) => ({
